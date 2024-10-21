@@ -1,0 +1,58 @@
+---
+const { activeLink } = Astro.props;
+---
+
+<div class="container mx-auto flex justify-center items-center">
+  <ul class="flex space-x-4 pt-2">
+    <li>
+      <a
+        href="/"
+        class={`hover:text-red-900 ${activeLink === "/" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >งานบวช</a
+      >
+    </li>
+    <li>
+      <a
+        href="/wedding"
+        class={`hover:text-red-900 ${activeLink === "/wedding" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >งานแต่ง</a
+      >
+    </li>
+    <li>
+      <a
+        href="/graduate"
+        class={`hover:text-red-900 ${activeLink === "/graduate" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        class={`text-gray-800 hover:text-red-900 ${activeLink === "/graduate" ? "underline" : null}`}
+        >รับปริญญา</a
+      >
+    </li>
+    <li>
+      <a
+        href="/portfolio"
+        class={`hover:text-red-900 ${activeLink === "/portfolio" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >Portfolio</a
+      >
+    </li>
+    <li>
+      <a
+        href="/event"
+        class={`hover:text-red-900 ${activeLink === "/event" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >Event</a
+      >
+    </li>
+    <li>
+      <a
+        href="/price"
+        class={`hover:text-red-900 ${activeLink === "/price" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >ราคา</a
+      >
+    </li>
+    <li>
+      <a
+        href="/contact"
+        class={`hover:text-red-900 ${activeLink === "/contact" ? "underline text-red-900 font-bold" : "`text-gray-800"}`}
+        >ติดต่อ</a
+      >
+    </li>
+  </ul>
+</div>

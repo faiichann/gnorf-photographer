@@ -1,5 +1,4 @@
 ---
-import Content from "../components/Content";
 import Navbar from "../components/Navbar.astro";
 ---
 
@@ -14,8 +13,7 @@ import Navbar from "../components/Navbar.astro";
   <body class="bg-gray-100">
     <main class="container mx-auto p-4">
       <h1 class="text-4xl font-bold text-center mt-10">GNORF 📸</h1>
-      <Navbar activeLink="/" />
-      <Content client:load />
+      <Navbar activeLink="/event" />
     </main>
   </body>
 </html>
